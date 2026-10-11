@@ -1,0 +1,682 @@
+{
+  "generatedAt": "2026-10-11T09:53:18.036Z",
+  "generatorHash": "c7e1ac927405c5943e133989fcbf5625cd0c27718df5c2a0b43722fca4a1bcbe",
+  "assets": [
+    {
+      "body": "bennu",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "fd7d173adc4653d5d97514d633ad0bbdef9571ea1d668e80ef64a406e2ac0d24",
+      "bytes": 171,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":1999,\"palette\":[\"#6f6a60\",\"#57534a\",\"#8a8578\"],\"roughness\":0.6,\"craters\":true,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "1999"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "bennu",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "e928a65d5d21c3eee08466993686128b5d7312899578a550d0a3168203deaf92",
+      "bytes": 338491,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"1d891ecb9827c814d87838e6efe9c74b7618a19c6a213a627d95bab2fd1a6a94\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "ceres",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_ceres_fictional.jpg",
+      "sha256": "ee59b2c7aa399dfdc810078c723373670133fe8505e439601dff4ce6f3cc5ad8",
+      "bytes": 1127678,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_ceres_fictional.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "ceres",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "43019fea7b27a6df269b2e0c0fa39c3396da07b5c7c0229ee2846274cbeb2c39",
+      "bytes": 313051,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"ef480382c12a45591ca03398ef1d546cb77d7a67484e06a45f32f8bb0c15d81f\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "earth",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_earth_daymap.jpg",
+      "sha256": "767ee1dc6eb3802699bfccf6f264880f8acd0b80de3191cd24984fe279b07b7c",
+      "bytes": 463087,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_earth_daymap.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "earth",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "0fe2733726d056980253de1574d1fd13cf021bbd4cd82a80200fb5803a4b2c03",
+      "bytes": 266491,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"1d07bba13d36cc1e1f9415c5f6b68b117d196fe39e25751cfbca92a239dfae18\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "europa",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "8e1b547984a55648157077d2c1fb218ff55c0a81de9a74bf81cc2a6155d537e5",
+      "bytes": 172,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":421,\"palette\":[\"#e9e4da\",\"#cbb9a2\",\"#9a6a48\"],\"roughness\":0.25,\"craters\":false,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "421"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "europa",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "ae1df0545089bf2bd40b964de24c9365bd8a4d8f1843158464aab1002e476451",
+      "bytes": 236731,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"36c3bce2071072dc10671dc9b7ba43bd67cb0d94fb72693c50fd5074888a644d\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "halley",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "ae4da0788b7802b13ef396c4de5599076e2c676b8e03d2ac86c8cd6bea84de1a",
+      "bytes": 172,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":1758,\"palette\":[\"#8a8578\",\"#6f6a60\",\"#4a463e\"],\"roughness\":0.55,\"craters\":true,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "1758"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "halley",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "713b43ce4535ebc7792db76cceec86df61e90f4bb031928bacbd5e653da42138",
+      "bytes": 359611,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"c22b33a64de9d606c69a2f5a5f060475ca7517ea51105fbfaa8a8d60cc91efe6\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "io",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "ea8b91f578b393b603434d6f12a09756161a44696bf1c05c4dd54fe02cbafc77",
+      "bytes": 172,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":1061,\"palette\":[\"#e8d44f\",\"#c8862a\",\"#7a4a20\"],\"roughness\":0.3,\"craters\":false,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "1061"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "io",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "7eb918ab334d12a0841daf20a52b02a889790c4a0a0d7da13e3616d1c0a46a56",
+      "bytes": 322171,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"1b4bcbe2a614305757ec3fcf90b4582cfad85b92336cd91122c69c61b35a4782\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "jupiter",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_jupiter.jpg",
+      "sha256": "b0f04d005350252636b0e3396fc592548cbd9e9126b269d32d5c6abd4b0e4f2b",
+      "bytes": 498976,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_jupiter.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "jupiter",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "203801bf8723165a1c0a6e62dd601fbe41820a17c7f6c203db32f811284c23e1",
+      "bytes": 340891,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"9d02d68dffbc7e2cd332bb817f75622157607bbb580848dc8f14edc8c04179c9\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "mars",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_mars.jpg",
+      "sha256": "2d187f3e77a98eaa8cea5f4cc722f633c122ef170b9e94ace6b5fb6cbc3f8e01",
+      "bytes": 750547,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_mars.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "mars",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "cdfb13be1cbcc45269cdde514577b4f999ada7e12d50fd4fba43989eb9bd67bb",
+      "bytes": 169531,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"6125b69cb24a05fba3a6f80448e488870308a6ccf5f15aca2b2f54b67fd9ce15\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "mercury",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_mercury.jpg",
+      "sha256": "5a5c80607f643496bac9a631e71957def35ed788895f18b678ac849c2b38e48a",
+      "bytes": 872555,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_mercury.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "mercury",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "218a5beced7bec2aff3be35122409d0bc4b5ebc261d5d921f5a3eeeabbc5b4fb",
+      "bytes": 271291,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"050178041475e964bcf78d2677faa2289e683000474297c57c74861525874511\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "moon",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_moon.jpg",
+      "sha256": "2764ba6535ea0481a062846ee033cc7a909dae05b31a8fd13f3e98f3a7fd92bd",
+      "bytes": 1053869,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_moon.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "moon",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "201889e46d31f8b383f8014c9b31ab6e79825eb5c6bb06ddaad7d5eb6ce0cb2a",
+      "bytes": 322651,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"1670716dcdcb7e07d119098159236e727a560d4149c92c962d8d48c35d3fffd4\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "neptune",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_neptune.jpg",
+      "sha256": "cb42ea82709741d28b0af44d8b283cbc6dbd0c521a7f0e1e1e010ade00977df6",
+      "bytes": 241580,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_neptune.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "neptune",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "6e4ac4533b7666c00bba1d821954cd2bb16674f1acaa9343d10a302a8a5f50c6",
+      "bytes": 152731,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"95473311b76a50a99c8700afb695b87811a0fed696e4192c3b574123229ad9c9\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "pluto",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "c064af5ff31dc14159b727ceabf614b1d3e74907ecd114a391168a393a53e937",
+      "bytes": 172,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":1516,\"palette\":[\"#c9b9a6\",\"#a08878\",\"#e8ddd0\"],\"roughness\":0.35,\"craters\":true,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "1516"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "pluto",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "a0ae34f66389949f6c2e88902b93578b1a31261766dce4b8e06a5088e141cc66",
+      "bytes": 173851,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"1bb735196f056421af86aeab694ff18e87074729101ca87411e73fd8dbc7999f\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "saturn",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_saturn.jpg",
+      "sha256": "54a900ca9bf7ab62e70f862852759abdf342e6d6436a95a2fe9ebdb6bcd3bbac",
+      "bytes": 199916,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_saturn.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "saturn",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "922c84c1a364f81fa78cbea24f6af922c00e20cc07e3bc2265752d1cdc541099",
+      "bytes": 303451,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"c5e5428f9bdf84a6adfbe6716e27f80dbde34121dc7ac3ab11c879c88c2d44fb\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "sun",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_sun.jpg",
+      "sha256": "ff0f076ba65e03b5ab518451bc96699325be38e3ccbdd5869ee1c00f3a0c8816",
+      "bytes": 822427,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_sun.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "sun",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "75cd3d2ba550191e8805f52550da06cd98f7f67cef6bdfabaf8e2e801ca27627",
+      "bytes": 488731,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"5de2c9b608b25c6b43023ecec2c153c83d3f0b340b2a01d0811709329b37c197\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "titan",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "9636ace64ddbb77be71034c209548ea073a724dc21d57bd4dfb8b0ad642e7662",
+      "bytes": 173,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":1661,\"palette\":[\"#d29a3e\",\"#b07828\",\"#8a5a20\"],\"roughness\":0.15,\"craters\":false,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "1661"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "titan",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "02796b5c356f4de460df54b3ffc9b34f56fb75d96e93f02aeee3c66c204eecd0",
+      "bytes": 333691,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"6b580d8dc75907b5e9ef261e4243707eda31f7c571e08aa145901950b267febd\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "uranus",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_uranus.jpg",
+      "sha256": "d15239d46f82d3ea13d2b260b5b29b2a382f42f2916dae0694d0387b1204a09d",
+      "bytes": 77751,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_uranus.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "uranus",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "577c83ab88a2d4208809663e1ec50bc86ccf7991398c7628e955d386e903edd5",
+      "bytes": 392731,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"ae120081efc3e71fee0e6fa559658db7144944c7494a64e718fa3fb408e494f1\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "venus",
+      "assetId": "texture",
+      "spdxLicenseId": "CC-BY-4.0",
+      "origin": "third-party",
+      "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_venus_surface.jpg",
+      "sha256": "dbe5db1c794a8ab4cbf7dd6bf193540c400fc833ce1e6cc399318aa68026278b",
+      "bytes": 885075,
+      "accessedOn": "2026-10-11",
+      "modifications": [
+        "原文件名 2k_venus_surface.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+      ],
+      "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+      "redistributable": true,
+      "evidencePath": "research/T2-nasa-textures-and-data.md"
+    },
+    {
+      "body": "venus",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "5d8a7246bd55cc74998f33cc8a227a35245a4965aa3480700eba937e0f729e73",
+      "bytes": 400891,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"af3d3f19725b1300f2341fb37cad1341b70806420fe91ae7f08f020d90ebdd1d\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    },
+    {
+      "body": "vesta",
+      "assetId": "procedural-model",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "f690dd455a6febedf6e60b05659db02e150f9a02bc6d926ad8587a7a069528aa",
+      "bytes": 171,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "src/viewer/procedural/createSmallBody.ts",
+        "version": "0.1.0",
+        "parametersJson": "{\"seed\":2405,\"palette\":[\"#a99f8d\",\"#8a8070\",\"#6f6a60\"],\"roughness\":0.5,\"craters\":true,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+        "seed": "2405"
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+      "redistributable": true,
+      "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+    },
+    {
+      "body": "vesta",
+      "assetId": "narration.zh-CN",
+      "spdxLicenseId": "CC-BY-NC-SA-4.0",
+      "origin": "generated",
+      "sourceUrl": null,
+      "sha256": "99b1b4d7d89c2419469127696082f440eb826d5ed6737a9edb5617b64ccd2796",
+      "bytes": 271291,
+      "accessedOn": null,
+      "generatedBy": {
+        "tool": "scripts/synthesize-narration.mjs",
+        "version": "0.1.0",
+        "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"62e765e1e718ba004a5abc35d568580aa9d02e8cdafaf0b06719c3a39b60df10\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+        "seed": null
+      },
+      "modifications": [],
+      "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+      "redistributable": true,
+      "evidencePath": "scripts/synthesize-narration.mjs"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "assetId": "texture",
+    "spdxLicenseId": "CC-BY-4.0",
+    "origin": "third-party",
+    "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_venus_surface.jpg",
+    "sha256": "dbe5db1c794a8ab4cbf7dd6bf193540c400fc833ce1e6cc399318aa68026278b",
+    "bytes": 885075,
+    "accessedOn": "2026-10-11",
+    "modifications": [
+      "原文件名 2k_venus_surface.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+    ],
+    "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+    "redistributable": true,
+    "evidencePath": "research/T2-nasa-textures-and-data.md"
+  },
+  {
+    "assetId": "narration.zh-CN",
+    "spdxLicenseId": "CC-BY-NC-SA-4.0",
+    "origin": "generated",
+    "sourceUrl": null,
+    "sha256": "5d8a7246bd55cc74998f33cc8a227a35245a4965aa3480700eba937e0f729e73",
+    "bytes": 400891,
+    "accessedOn": null,
+    "generatedBy": {
+      "tool": "scripts/synthesize-narration.mjs",
+      "version": "0.1.0",
+      "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"af3d3f19725b1300f2341fb37cad1341b70806420fe91ae7f08f020d90ebdd1d\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+      "seed": null
+    },
+    "modifications": [],
+    "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+    "redistributable": true,
+    "evidencePath": "scripts/synthesize-narration.mjs"
+  }
+]

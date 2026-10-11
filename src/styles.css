@@ -1,0 +1,326 @@
+:root {
+  color-scheme: dark;
+  --space-deep: #0b1026;
+  --space-panel: #141b3d;
+  --space-accent: #7aa2ff;
+  --text-primary: #eef2ff;
+  --text-muted: #aab4d8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% -20%, #1a2450 0%, var(--space-deep) 60%)
+    var(--space-deep);
+  color: var(--text-primary);
+  font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+.wordmark {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.wordmark-sub {
+  margin: 0.1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  letter-spacing: 0.3em;
+}
+
+.site-header {
+  text-align: center;
+  padding: 1.2rem 1rem 0.4rem;
+}
+
+.page {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  opacity: 1;
+  transition: opacity 220ms ease;
+}
+
+.page-fading {
+  opacity: 0;
+}
+
+/* 沙盘 */
+
+.sandbox-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(6, 10, 28, 0.65);
+  border: 1px solid rgba(122, 162, 255, 0.25);
+}
+
+.sandbox-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.sandbox-fallback {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.sandbox-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.8rem 0 0;
+  flex-wrap: wrap;
+}
+
+.sandbox-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.sandbox-controls button,
+.body-index button,
+.back-button {
+  font: inherit;
+  color: var(--text-primary);
+  background: var(--space-panel);
+  border: 1px solid rgba(122, 162, 255, 0.4);
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+
+.sandbox-controls button:hover,
+.body-index button:hover,
+.back-button:hover {
+  border-color: var(--space-accent);
+}
+
+/* 天体索引 */
+
+.body-index h2 {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.body-index ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  gap: 0.6rem;
+}
+
+.body-index li button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  text-align: left;
+}
+
+.body-name {
+  font-weight: 600;
+}
+
+.body-kind {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* 展台占位 */
+
+.back-button {
+  margin-bottom: 1rem;
+}
+
+.exhibit-coming {
+  color: var(--text-muted);
+}
+
+/* 无障碍 */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--space-accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    transition: none;
+  }
+}
+
+/* 展台 */
+
+.exhibit-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(6, 10, 28, 0.65);
+  border: 1px solid rgba(122, 162, 255, 0.25);
+}
+
+.exhibit-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* 双指捏合需要接管触控手势 */
+  touch-action: none;
+  cursor: grab;
+}
+
+.exhibit-canvas:active {
+  cursor: grabbing;
+}
+
+.exhibit-original {
+  margin: -0.4rem 0 1rem;
+  color: var(--text-muted);
+  letter-spacing: 0.2em;
+}
+
+.exhibit-actions {
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.narration-button {
+  font: inherit;
+  font-weight: 600;
+  color: var(--space-deep);
+  background: var(--space-accent);
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+}
+
+.narration-pending {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.fact-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 0.7rem;
+}
+
+.fact-cards li {
+  background: var(--space-panel);
+  border: 1px solid rgba(122, 162, 255, 0.25);
+  border-radius: 0.8rem;
+  padding: 0.8rem 1rem;
+}
+
+.fact-title {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+}
+
+.fact-analogy {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.parent-guide li {
+  margin-bottom: 0.35rem;
+}
+
+.uncertainty {
+  margin: 1.2rem 0;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.exhibit-sources ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.exhibit-sources a {
+  color: var(--space-accent);
+}
+
+.source-date {
+  margin-left: 0.3rem;
+}
+
+/* credits 页脚 */
+
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(122, 162, 255, 0.2);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 和地球比比看 */
+
+.compare-button {
+  font: inherit;
+  color: var(--text-primary);
+  background: var(--space-panel);
+  border: 1px solid rgba(122, 162, 255, 0.4);
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+}
+
+.compare-button[aria-pressed='true'] {
+  border-color: var(--space-accent);
+  background: rgba(122, 162, 255, 0.18);
+}
+
+.compare-caption {
+  margin: 0.6rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-align: center;
+}

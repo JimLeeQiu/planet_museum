@@ -1,0 +1,36 @@
+[
+  {
+    "assetId": "texture",
+    "spdxLicenseId": "CC-BY-4.0",
+    "origin": "third-party",
+    "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_mars.jpg",
+    "sha256": "2d187f3e77a98eaa8cea5f4cc722f633c122ef170b9e94ace6b5fb6cbc3f8e01",
+    "bytes": 750547,
+    "accessedOn": "2026-10-11",
+    "modifications": [
+      "原文件名 2k_mars.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+    ],
+    "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+    "redistributable": true,
+    "evidencePath": "research/T2-nasa-textures-and-data.md"
+  },
+  {
+    "assetId": "narration.zh-CN",
+    "spdxLicenseId": "CC-BY-NC-SA-4.0",
+    "origin": "generated",
+    "sourceUrl": null,
+    "sha256": "cdfb13be1cbcc45269cdde514577b4f999ada7e12d50fd4fba43989eb9bd67bb",
+    "bytes": 169531,
+    "accessedOn": null,
+    "generatedBy": {
+      "tool": "scripts/synthesize-narration.mjs",
+      "version": "0.1.0",
+      "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"6125b69cb24a05fba3a6f80448e488870308a6ccf5f15aca2b2f54b67fd9ce15\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+      "seed": null
+    },
+    "modifications": [],
+    "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+    "redistributable": true,
+    "evidencePath": "scripts/synthesize-narration.mjs"
+  }
+]

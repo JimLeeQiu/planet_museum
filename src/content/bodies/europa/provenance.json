@@ -1,0 +1,40 @@
+[
+  {
+    "assetId": "procedural-model",
+    "spdxLicenseId": "CC-BY-NC-SA-4.0",
+    "origin": "generated",
+    "sourceUrl": null,
+    "sha256": "8e1b547984a55648157077d2c1fb218ff55c0a81de9a74bf81cc2a6155d537e5",
+    "bytes": 172,
+    "accessedOn": null,
+    "generatedBy": {
+      "tool": "src/viewer/procedural/createSmallBody.ts",
+      "version": "0.1.0",
+      "parametersJson": "{\"seed\":421,\"palette\":[\"#e9e4da\",\"#cbb9a2\",\"#9a6a48\"],\"roughness\":0.25,\"craters\":false,\"generatorSha256\":\"1f5bca2b8fb07495df810c5058d5a4f36a355a918d5d454b8301d47acb48f9ed\"}",
+      "seed": "421"
+    },
+    "modifications": [],
+    "attribution": "星球博物馆项目程序化生成（SPEC §5.5；基于探测器照片配色，是想象的样子，非真实地图）",
+    "redistributable": true,
+    "evidencePath": "src/viewer/procedural/createSmallBody.ts"
+  },
+  {
+    "assetId": "narration.zh-CN",
+    "spdxLicenseId": "CC-BY-NC-SA-4.0",
+    "origin": "generated",
+    "sourceUrl": null,
+    "sha256": "ae1df0545089bf2bd40b964de24c9365bd8a4d8f1843158464aab1002e476451",
+    "bytes": 236731,
+    "accessedOn": null,
+    "generatedBy": {
+      "tool": "scripts/synthesize-narration.mjs",
+      "version": "0.1.0",
+      "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"36c3bce2071072dc10671dc9b7ba43bd67cb0d94fb72693c50fd5074888a644d\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+      "seed": null
+    },
+    "modifications": [],
+    "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+    "redistributable": true,
+    "evidencePath": "scripts/synthesize-narration.mjs"
+  }
+]

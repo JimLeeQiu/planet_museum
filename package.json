@@ -1,0 +1,45 @@
+{
+  "name": "planet-museum",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && vite build --ssr src/ssr/entry.tsx --outDir .ssr-dist --emptyOutDir && node scripts/ssg.mjs",
+    "prebuild": "npm run generate:credits",
+    "preview": "vite preview",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc -b",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:install": "playwright install chromium",
+    "validate:content": "vitest run src/content/validate.test.ts",
+    "generate:credits": "node scripts/generate-credits.mjs",
+    "synthesize:narration": "node scripts/synthesize-narration.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.8.0",
+    "typescript-eslint": "^8.34.0",
+    "vitest": "^3.2.0"
+  }
+}

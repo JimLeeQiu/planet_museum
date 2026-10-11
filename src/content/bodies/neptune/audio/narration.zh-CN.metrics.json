@@ -1,0 +1,8 @@
+{
+  "scriptSha256": "95473311b76a50a99c8700afb695b87811a0fed696e4192c3b574123229ad9c9",
+  "outputSha256": "6e4ac4533b7666c00bba1d821954cd2bb16674f1acaa9343d10a302a8a5f50c6",
+  "charsBilled": 147,
+  "voice": "longjielidou_v2",
+  "synthesizedAt": "2026-10-11T08:20:24.270Z",
+  "engine": "阿里云智能语音交互 CosyVoice（商用版）"
+}

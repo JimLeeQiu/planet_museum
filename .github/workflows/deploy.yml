@@ -1,0 +1,40 @@
+name: 构建并部署到 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  pages: write
+  id-token: write
+
+# 避免并发部署互相覆盖
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: 构建（类型检查 / 内容门禁 / credits / 双构建 / SSG）
+        run: |
+          npm ci
+          npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,36 @@
+[
+  {
+    "assetId": "texture",
+    "spdxLicenseId": "CC-BY-4.0",
+    "origin": "third-party",
+    "sourceUrl": "https://www.solarsystemscope.com/textures/download/2k_mercury.jpg",
+    "sha256": "5a5c80607f643496bac9a631e71957def35ed788895f18b678ac849c2b38e48a",
+    "bytes": 872555,
+    "accessedOn": "2026-10-11",
+    "modifications": [
+      "原文件名 2k_mercury.jpg 重命名为 texture-2k.jpg（项目命名约定，内容未改动）"
+    ],
+    "attribution": "Solar System Scope / www.solarsystemscope.com（CC BY 4.0）",
+    "redistributable": true,
+    "evidencePath": "research/T2-nasa-textures-and-data.md"
+  },
+  {
+    "assetId": "narration.zh-CN",
+    "spdxLicenseId": "CC-BY-NC-SA-4.0",
+    "origin": "generated",
+    "sourceUrl": null,
+    "sha256": "218a5beced7bec2aff3be35122409d0bc4b5ebc261d5d921f5a3eeeabbc5b4fb",
+    "bytes": 271291,
+    "accessedOn": null,
+    "generatedBy": {
+      "tool": "scripts/synthesize-narration.mjs",
+      "version": "0.1.0",
+      "parametersJson": "{\"voice\":\"longjielidou_v2\",\"format\":\"mp3\",\"sampleRate\":24000,\"speechRate\":-10,\"pitchRate\":0,\"volume\":50,\"gateway\":\"wss://nls-gateway-cn-beijing.aliyuncs.com/ws/v1\",\"textSha256\":\"050178041475e964bcf78d2677faa2289e683000474297c57c74861525874511\",\"note\":\"SAMPLE_RATE=24000：杰力豆 v2 音色最高支持 24 kHz（SPEC §6.2 的 48 kHz 为 Azure 口径）\"}",
+      "seed": null
+    },
+    "modifications": [],
+    "attribution": "星球博物馆项目配音：阿里云智能语音交互 CosyVoice 合成（龙杰力豆·童声）；脚本经人工审核，AI 合成语音，站点已作披露",
+    "redistributable": true,
+    "evidencePath": "scripts/synthesize-narration.mjs"
+  }
+]
