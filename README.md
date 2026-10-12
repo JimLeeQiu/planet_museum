@@ -1,29 +1,40 @@
-# 星球博物馆（Planet Museum）部署说明
+# 星球博物馆（Planet Museum）
 
-亲子向太阳系 3D 合集网站。纯静态产物（`dist/`），**无后端、无数据库、无环境变量**，可部署到任意静态托管平台，不锁定厂商。
+亲子向太阳系 3D 合集网站。纯静态网站，**无后端、无数据库、无环境变量**。参考的灵感来自于[史前动物博物馆](https://github.com/s010s/prehistoric-animal-museum.git)，纯Vide Coding（Kimi Code），部署在GitHub Pages(http://jimleeqiu.github.io/planet_museum/)
 
-## 一、设备支持
+## 目前天体合集
 
-部署一次，全平台访问：手机 / 平板 / PC 浏览器打开同一网址即可。
+- 太阳
+- 水星
+- 金星
+- 地球
+- 月球
+- 火星
+- 木星
+- 木卫二
+- 木卫一
+- 土星
+- 土卫六
+- 天王星
+- 海王星
+- 冥王星
+- 谷神星
+- 灶神星
+- 贝努
+- 哈雷彗星
 
-- 响应式布局：沙盘与展台自适应屏幕尺寸
-- 触摸交互：单指拖动旋转、双指捏合缩放（触屏），鼠标拖动/滚轮（桌面）
-- 无障碍：`prefers-reduced-motion`、键盘方向键旋转、aria-live 状态播报
-- 硬性要求：浏览器需支持 WebGL（近十年主流设备均支持）
+> 部分小行星和矮行星天体由于素材来源问题，展台渲染质量较差
 
-## 二、本地构建
+## 本地构建
 
 要求 Node ≥ 22（开发用 Node 24 验证）。
 
 ```bash
-cd site
 npm install
 npm run build        # 双构建（客户端 + SSR）+ SSG + 许可打包，产物在 dist/
 ```
 
-构建序列等价于 SPEC §8.5：`validate:content` → `tsc -b` → `generate:credits`（prebuild 自动）→ 客户端构建 → SSR 构建 → SSG 静态页生成。任何一环失败构建即失败。
-
-## 三、本地预览与局域网体验
+## 本地预览与局域网体验
 
 ```bash
 npm run preview                 # 本机访问 http://localhost:4173
@@ -32,22 +43,7 @@ npm run preview -- --host       # 监听所有网卡
 
 `--host` 模式下，手机/平板连同一 Wi-Fi，浏览器访问 `http://<电脑局域网IP>:4173` 即可真机体验（适合触屏手势实测）。
 
-## 四、部署到托管平台
-
-`dist/` 是完整的可部署目录（`index.html` + `assets/` + `bodies/<id>/index.html` + 许可通告）。`base: './'` 相对路径，**任意子路径托管均可**。
-
-| 平台 | 操作 |
-|---|---|
-| **Cloudflare Pages** | 控制台「直接上传资产」拖入 `dist/`，或连接 Git 仓库：构建命令 `npm run build`，输出目录 `site/dist` |
-| **GitHub Pages** | 把 `dist/` 内容推到 `gh-pages` 分支（或用 Actions 构建后发布）；项目页地址自带子路径，无需额外配置 |
-| **阿里云 OSS** | 创建 Bucket → 开启「静态网站托管」→ 上传 `dist/`，首页 `index.html`，404 页 `index.html`；配 CDN 国内访问更快 |
-| **Netlify / Vercel** | 拖拽 `dist/` 到部署页即可（zero-config） |
-
-### SPA 回退说明
-
-站内转场是状态切换，不依赖 URL；但展台直达页（`/bodies/<id>/`）是真实生成的静态文件，刷新/直达均正常。若托管平台提供 SPA 404 回退，统一回退到 `/index.html` 亦可（SSG 已预渲染两种页面）。
-
-## 五、部署后核对清单
+## 部署后核对清单
 
 1. 首页：沙盘太阳居中发亮、点击空白暂停/继续、下方 18 天体索引
 2. 展台：任选一个 → 3D 模型可拖动旋转 → 「听一听」可播放（18 个全部解锁）
@@ -55,16 +51,16 @@ npm run preview -- --host       # 监听所有网卡
 4. 直达链接：`/bodies/mars/` 可直接打开
 5. 合规：`/THIRD_PARTY_NOTICES.md`、`/LICENSING.md`、`/LICENSES/` 均可访问
 
-## 六、更新内容后重新部署
+## 更新内容后重新部署
 
-新增/修改天体内容后，按序执行并重新上传 `dist/`：
+新增/修改天体内容后：
 
 ```bash
 npm run validate:content   # 发布门禁
 npm run build              # 内含 tsc / credits / 双构建 / SSG
 ```
 
-配音重合成另见 `scripts/synthesize-narration.mjs`（需阿里云凭证环境变量，不入仓）。
+配音重合成另见 `scripts/synthesize-narration.mjs`。
 
 ## 七、许可摘要
 
